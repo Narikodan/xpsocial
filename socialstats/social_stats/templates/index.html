@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Social Media</title>
+
+    <!-- Bootstrap CSS CDN link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: url('https://scontent.fccj9-1.fna.fbcdn.net/v/t39.30808-6/328712821_712706156986495_4211825387265958217_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_ohc=ZYNjyFNvYjkAX-qkPS7&_nc_ht=scontent.fccj9-1.fna&oh=00_AfBVeNn-y4Q0zUGUVhGHHuQvdXo_8O1Rc385Y1jS-UIKZA&oe=65C58AAA');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card mx-auto">
+        <div class="card-header text-center">
+            <h1 class="mb-0">Xpayback</h1>
+        </div>
+        <div class="card-body">
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a class="btn btn-primary btn-block" href="{% url 'connect_facebook' %}">
+                        <i class="fab fa-facebook"></i> Connect with Facebook
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="btn btn-danger btn-block" href="{% url 'connect_youtube' %}">
+                        <i class="fab fa-youtube"></i> Connect with YouTube
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="btn btn-success btn-block" href="{% url 'get_channel_members' %}">
+                        <i class="fab fa-telegram"></i> Connect with Telegram
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="btn btn-info btn-block" href="{% url 'connect_twitter' %}">
+                        <i class="fab fa-twitter"></i> Connect with Twitter
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome Icons CDN link for social media icons -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit-code.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

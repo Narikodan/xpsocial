@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Stats</title>
+</head>
+<body>
+    <h1>Channel Members</h1>
+    <ul>
+        {% for member in member_list %}
+            <li>{{ member }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>YouTube Subscribed Channels</h2>
+    <ul>
+        {% for channel in channels %}
+            <li>{{ channel }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
